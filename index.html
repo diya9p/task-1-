@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tracker</title>
+</head>
+<body>
+    <h1>Personal Finance Tracker</h1>
+    
+    <div>
+        <form id="finance-tracker-form">
+            <h2>Transaction Log!</h2>
+            <!-- <label class="text-black">Income
+                <input type="number" id="income" required><br><br>
+            </label> -->
+
+            <label class="text-black">Amount
+                <input type="number" id="amount" required><br><br>
+            </label>
+
+            <label class="text-black">Description 
+                <input type="text" id="description" required><br><br>
+            </label>
+
+            <label class="text-bg-danger">Category
+                <select id="category" required>
+                    <option value="" disabled selected>Please select a Category</option>
+                    <option value="Groceries">Groceries</option>
+                    <option value="Salary">Salary</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Holiday Trip">Holiday Trip</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label><br><br>
+
+            <label>Date
+                <input class="text-black" type="date" id="date" required><br><br>
+                <button id="add-transaction" type="submit">Add Transaction</button>
+            </label>
+        </form>
+    </div>
+
+    <div>
+        <h2>Financial Overview</h2>
+        <p>Total Expenditures: <span id="total-expenditures"></span></p>
+        <p>Total Income: <span id="total-income"></span></p>
+        <p>Net Balance: <span id="net-balance"></span></p>
+    </div>
+
+    <div>
+        <h3>List of Recent Transactions</h3>
+        <table id="transactions-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Amount (₹)</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="transactions-list"></tbody>
+        </table>
+    </div>
+
+
+    <script src="sandbox.js"></script>
+</body>
+</html>
