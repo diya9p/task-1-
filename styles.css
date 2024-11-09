@@ -95,3 +95,50 @@ button:hover {
 #transactions-table th.description-column {
     width: 50%;
 } */
+
+#filter-section {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #260680;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filter-section h3 {
+    margin: 0;
+    color: #260680;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#filter-section label {
+    margin-right: 10px;
+    font-size: 1em;
+    color: #260680;
+}
+
+#filter-section select, #filter-section input[type="date"], #apply-filter {
+    margin: 5px;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #260680;
+    border-radius: 5px;
+}
+
+#apply-filter {
+    padding: 8px 15px;
+    background-color: #260680;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 5px;
+}
+
+#apply-filter:hover {
+    background-color: #4a0bb8;
+}
